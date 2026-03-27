@@ -26,11 +26,16 @@ def calculator():
     numero=float(input())
     otro=float(input())
     operacion=input()
-    if operacion==("+"):
-        print(f"Resultado: {numero + otro}")
-    elif operacion==("/") and otro== 0:
-         print("Error: division por cero")
-    elif operacion=="/":
-        print(f"Resultado: {numero/otro}")
-    elif operacion==("x"):
+    if operacion == "*" or operacion == "/" or operacion == "+" or operacion == "-":
+        if operacion==("+"):
+            print(f"Resultado: {numero + otro}")
+        elif operacion==("/") and otro== 0:
+            print("Error: division por cero")
+        elif operacion=="/":
+            print(f"Resultado: {numero/otro}")
+        elif operacion==("*"):
+            print(f"Resultado: {numero*otro}")
+        elif operacion==("-"):
+            print(f"Resultado: {numero-otro}")
+    else:
         print("Operacion invalida")
