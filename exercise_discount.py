@@ -32,7 +32,7 @@ def discount():
     if cant>=10:
         descuento=20
 
-    elif cant>5 and cant<9:
+    elif cant>=5 :
         descuento=10
 
     else:
